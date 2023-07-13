@@ -1,5 +1,5 @@
 # Description
-**clean_disk** contains a bash file which cleans up Debian and Ubuntu-based distros disk by just removing old snaps and some non used dependencies.
+**clean.sh** is a bash file which cleans up Debian and Ubuntu-based distros disk by just removing old snaps and some non used dependencies.
 It is easy to just automate this cleaning process than typing all the command simultaneously.
 
 
