@@ -31,18 +31,12 @@ snap list --all | awk '/disabled/{print $1, $3}' | \
 echo "Clearing temporary files..."
 sudo rm -rf /tmp/* /var/tmp/*
 
-# 5. Clear cached memory (optional, but safe to run)
+# 5. Clear cached memory (RAM)
 echo "Clearing cached memory..."
 sync
 sudo sysctl -w vm.drop_caches=3
 
-# 6. Optional: Clear swap space if necessary
-echo "Checking swap usage..."
-free -h
-echo "Clearing swap space..."
-sudo swapoff -a && sudo swapon -a
-
-# 7. Additional checks for disk usage in Snap directory
+# 6. Additional checks for disk usage in Snap directory
 echo "Calculating storage used by Snap directory..."
 du -h /var/lib/snapd/snaps
 
