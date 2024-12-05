@@ -6,7 +6,7 @@ It is easy to just automate this cleaning process than typing all the command si
 # Installation
 ```
 git clone https://github.com/Ricktor0/clean_disk.git
-cd cleandisk
+cd clean_disk
 chmod +x clean.sh
 bash clean.sh 
 ```
